@@ -5,6 +5,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page270/he
 WORKDIR /var/www/html
 RUN unzip helpz.zip
 RUN cp -rvf free-charity-website-template/* .
-RUN rm -rf free-charity-website-template helpz.zip
+RUN rm -rf free-charity-website-template  helpz.zip
 CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND" ]
 EXPOSE 80
